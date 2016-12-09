@@ -40,3 +40,558 @@ Processing by EventsController#show as HTML
   Rendered events/show.html.erb within layouts/application (0.0ms)
   Rendered templete/_menu.html.erb (0.0ms)
 Completed 200 OK in 442ms (Views: 439.2ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36m (11.5ms)[0m  [1mDROP TABLE "events"[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "eventtime" datetime, "device" varchar, "user" varchar, "eventtype" varchar, "eventmethod" varchar, "pincode" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (20.9ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "eventtime" datetime, "device" varchar, "user" varchar, "eventtype" varchar, "eventmethod" varchar, "pincode" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (19.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (7.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (19.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20161202015532')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "events" ("eventtime", "device", "user", "eventtype", "eventmethod", "pincode", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["eventtime", "2016-12-08 09:00:00.000000"], ["device", "カギAAA"], ["user", "渋谷"], ["eventtype", "ロック"], ["eventmethod", "-"], ["pincode", 0], ["created_at", "2016-12-08 08:11:49.420958"], ["updated_at", "2016-12-08 08:11:49.420958"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2016-12-08 17:52:50 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-12-08 17:52:51 +0900
+
+
+Started GET "/toppage/index" for ::1 at 2016-12-08 17:52:51 +0900
+Processing by ToppageController#index as HTML
+  Rendered toppage/index.html.erb within layouts/application (21.9ms)
+  Rendered templete/_menu.html.erb (1.5ms)
+Completed 200 OK in 3320ms (Views: 3257.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-08 17:53:39 +0900
+
+
+Started GET "/assets/toppage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-08 17:53:39 +0900
+
+
+Started GET "/assets/locks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-12-08 17:53:39 +0900
+
+
+Started GET "/assets/application.self-1a0615132d42f19495700b4ff2f1dadc954f8ddb89cabfe1a22aff6d080f73fc.css?body=1" for ::1 at 2016-12-08 17:53:39 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-12-08 17:53:40 +0900
+
+
+Started GET "/assets/toppage.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-12-08 17:53:40 +0900
+
+
+Started GET "/assets/locks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-12-08 17:53:40 +0900
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-12-08 17:53:40 +0900
+
+
+Started GET "/events/show" for ::1 at 2016-12-08 17:53:45 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered events/show.html.erb within layouts/application (2.0ms)
+  Rendered templete/_menu.html.erb (0.5ms)
+Completed 200 OK in 431ms (Views: 427.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-08 17:55:06 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered events/show.html.erb within layouts/application (2.0ms)
+  Rendered templete/_menu.html.erb (0.5ms)
+Completed 200 OK in 460ms (Views: 458.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-08 17:55:33 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+  Rendered templete/_menu.html.erb (0.0ms)
+Completed 200 OK in 434ms (Views: 432.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-08 17:55:49 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+  Rendered templete/_menu.html.erb (0.5ms)
+Completed 200 OK in 457ms (Views: 455.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-12-08 17:56:18 +0900
+
+
+Started GET "/toppage/index" for ::1 at 2016-12-08 17:56:18 +0900
+Processing by ToppageController#index as HTML
+  Rendered toppage/index.html.erb within layouts/application (0.0ms)
+  Rendered templete/_menu.html.erb (0.0ms)
+Completed 200 OK in 366ms (Views: 369.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-08 17:56:57 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+  Rendered templete/_menu.html.erb (0.0ms)
+Completed 200 OK in 444ms (Views: 442.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-08 17:57:09 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+  Rendered templete/_menu.html.erb (0.0ms)
+Completed 200 OK in 466ms (Views: 464.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-08 17:58:29 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered events/show.html.erb within layouts/application (0.5ms)
+  Rendered templete/_menu.html.erb (0.5ms)
+Completed 200 OK in 438ms (Views: 426.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-08 17:58:55 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered events/show.html.erb within layouts/application (1.5ms)
+  Rendered templete/_menu.html.erb (0.5ms)
+Completed 200 OK in 486ms (Views: 485.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-08 18:00:59 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mEvent Load (1.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/show.html.erb within layouts/application (239.3ms)
+Completed 500 Internal Server Error in 460ms (ActiveRecord: 3.5ms)
+
+ActionView::Template::Error (Missing partial events/_event, application/_event with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Work/10_SumaiIoT/StudyRuby/hello-connect/app/views"
+):
+    12: 		<th width="100px">PINコード</th>
+    13: 	</tr>
+    14: 	<% @events.each do |event| %>
+    15: 		<%= render 'event', :event => event %>
+    16: 	<% end %>
+    17: </thead>
+  app/views/events/show.html.erb:15:in `block in _app_views_events_show_html_erb__1859000313_97619100'
+  app/views/events/show.html.erb:14:in `_app_views_events_show_html_erb__1859000313_97619100'
+
+
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.5ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (3971.3ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (3597.7ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (8169.5ms)
+
+
+Started GET "/" for ::1 at 2016-12-09 09:13:27 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-12-09 09:13:29 +0900
+
+
+Started GET "/toppage/index" for ::1 at 2016-12-09 09:13:29 +0900
+Processing by ToppageController#index as HTML
+  Rendered toppage/index.html.erb within layouts/application (23.0ms)
+  Rendered templete/_menu.html.erb (2.0ms)
+Completed 200 OK in 2080ms (Views: 2020.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:14:58 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/show.html.erb within layouts/application (340.9ms)
+Completed 500 Internal Server Error in 710ms (ActiveRecord: 4.0ms)
+
+ActionView::Template::Error (Missing partial events/_event, application/_event with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Work/10_SumaiIoT/StudyRuby/hello-connect/app/views"
+):
+    12: 		<th width="100px">PINコード</th>
+    13: 	</tr>
+    14: 	<% @events.each do |event| %>
+    15: 		<%= render 'event', :event => event %>
+    16: 	<% end %>
+    17: </thead>
+  app/views/events/show.html.erb:15:in `block in _app_views_events_show_html_erb___506990835_83513340'
+  app/views/events/show.html.erb:14:in `_app_views_events_show_html_erb___506990835_83513340'
+
+
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (31.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6463.6ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (5527.9ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (12595.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:19:20 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mEvent Load (2.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/show.html.erb within layouts/application (153.1ms)
+Completed 500 Internal Server Error in 385ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (Missing partial events/_event with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Work/10_SumaiIoT/StudyRuby/hello-connect/app/views"
+):
+    11: 		<th width="120px">ロック解除方法</th>
+    12: 		<th width="100px">PINコード</th>
+    13: 	</tr>
+    14: 	<% render @events %>
+    15: </thead>
+  app/views/events/show.html.erb:14:in `_app_views_events_show_html_erb___506990835_91504980'
+
+
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (4270.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (3048.9ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (6991.9ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:19:52 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/show.html.erb within layouts/application (159.1ms)
+Completed 500 Internal Server Error in 401ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (Missing partial events/_event with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Work/10_SumaiIoT/StudyRuby/hello-connect/app/views"
+):
+    10: 		<th width="100px">タイプ</th>
+    11: 		<th width="120px">ロック解除方法</th>
+    12: 		<th width="100px">PINコード</th>
+    13: 	<% render @events %>
+    14: 	</tr>
+    15: </thead>
+  app/views/events/show.html.erb:13:in `_app_views_events_show_html_erb___506990835_96805660'
+
+
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (4271.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (2159.9ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (5111.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:28:13 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/show.html.erb within layouts/application (208.1ms)
+Completed 500 Internal Server Error in 440ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (Missing partial events/_event, application/_event with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Work/10_SumaiIoT/StudyRuby/hello-connect/app/views"
+):
+     5: 	<col class="eventdate" />
+     6: 	<col class="device" />
+     7: 	<% @events.each do |event| %>
+     8: 		<%= render 'event', :event => event %>
+     9: 	<% end %>
+    10: </table>
+  app/views/events/show.html.erb:8:in `block in _app_views_events_show_html_erb___506990835_82110560'
+  app/views/events/show.html.erb:7:in `_app_views_events_show_html_erb___506990835_82110560'
+
+
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (4517.5ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (3803.7ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (8423.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:28:40 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/show.html.erb within layouts/application (201.1ms)
+Completed 500 Internal Server Error in 414ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (Missing partial events/_event, application/_event with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Work/10_SumaiIoT/StudyRuby/hello-connect/app/views"
+):
+     5: 	<col class="eventdate" />
+     6: 	<col class="device" />
+     7: 	<% @events.each do |event| %>
+     8: 		<%= render 'event', :event => event %>
+     9: 	<% end %>
+    10: </table>
+  app/views/events/show.html.erb:8:in `block in _app_views_events_show_html_erb___506990835_82110560'
+  app/views/events/show.html.erb:7:in `_app_views_events_show_html_erb___506990835_82110560'
+
+
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (4292.7ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (3898.8ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (8807.3ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:30:15 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/show.html.erb within layouts/application (232.2ms)
+Completed 500 Internal Server Error in 497ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (Missing partial events/_event, application/_event with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Work/10_SumaiIoT/StudyRuby/hello-connect/app/views"
+):
+    12: 		<th width="100px">PINコード</th>
+    13: 	</tr>
+    14: 	<% @events.each do |event| %>
+    15: 		<%= render 'event', :event => event %>
+    16: 	<% end %>
+    17: </thead>
+  app/views/events/show.html.erb:15:in `block in _app_views_events_show_html_erb___506990835_61018980'
+  app/views/events/show.html.erb:14:in `_app_views_events_show_html_erb___506990835_61018980'
+
+
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (4172.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (3954.8ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (8773.2ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:31:28 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/events_controller.rb:3:in `show'
+
+
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (4396.1ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (2848.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (7111.1ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:33:17 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mEvent Load (2.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/show.html.erb within layouts/application (204.1ms)
+Completed 500 Internal Server Error in 418ms (ActiveRecord: 4.0ms)
+
+ActionView::Template::Error (Missing partial events/_event, application/_event with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Work/10_SumaiIoT/StudyRuby/hello-connect/app/views"
+):
+    12: 		<th width="100px">PINコード</th>
+    13: 	</tr>
+    14: 	<% @events.each do |event| %>
+    15: 		<%= render 'event', :event => event %>
+    16: 	<% end %>
+    17: </thead>
+  app/views/events/show.html.erb:15:in `block in _app_views_events_show_html_erb___506990835_61018980'
+  app/views/events/show.html.erb:14:in `_app_views_events_show_html_erb___506990835_61018980'
+
+
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (4103.5ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (4791.4ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (10667.2ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:40:03 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mEvent Load (2.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/show.html.erb within layouts/application (24.7ms)
+  Rendered templete/_menu.html.erb (0.0ms)
+Completed 200 OK in 451ms (Views: 435.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:40:23 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/show.html.erb within layouts/application (6.0ms)
+  Rendered templete/_menu.html.erb (1.0ms)
+Completed 200 OK in 435ms (Views: 432.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:46:48 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/show.html.erb within layouts/application (8.8ms)
+  Rendered templete/_menu.html.erb (0.0ms)
+Completed 200 OK in 423ms (Views: 420.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:47:08 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/show.html.erb within layouts/application (9.0ms)
+  Rendered templete/_menu.html.erb (1.0ms)
+Completed 200 OK in 445ms (Views: 443.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:47:16 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/show.html.erb within layouts/application (8.0ms)
+  Rendered templete/_menu.html.erb (1.0ms)
+Completed 200 OK in 442ms (Views: 441.1ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "events" ("eventtime", "device", "user", "eventtype", "eventmethod", "pincode", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["eventtime", "2016-12-08 09:00:00.000000"], ["device", "カギAAA"], ["user", "渋谷A"], ["eventtype", "ロック"], ["eventmethod", "-"], ["pincode", 0], ["created_at", "2016-12-09 00:50:16.208805"], ["updated_at", "2016-12-09 00:50:16.208805"]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "events" ("eventtime", "device", "user", "eventtype", "eventmethod", "pincode", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["eventtime", "2016-12-09 09:00:00.000000"], ["device", "カギBBB"], ["user", "渋谷B"], ["eventtype", "ロック解除"], ["eventmethod", "PINコード"], ["pincode", 9876], ["created_at", "2016-12-09 00:50:16.255650"], ["updated_at", "2016-12-09 00:50:16.255650"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 09:50:52 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/show.html.erb within layouts/application (36.2ms)
+  Rendered templete/_menu.html.erb (1.0ms)
+Completed 200 OK in 1219ms (Views: 1167.4ms | ActiveRecord: 4.0ms)
+  [1m[36m (31.2ms)[0m  [1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "eventtime" datetime, "device" varchar, "user" varchar, "eventtype" varchar, "eventmethod" varchar, "pincode" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (15.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (15.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (15.7ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (15.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20161202015532')
+  [1m[36m (31.2ms)[0m  [1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "eventtime" datetime, "device" varchar, "user" varchar, "eventtype" varchar, "eventmethod" varchar, "pincode" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (15.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (15.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (15.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20161202015532')
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "events" ("eventtime", "device", "user", "eventtype", "eventmethod", "pincode", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["eventtime", "2016-12-08 09:00:00.000000"], ["device", "カギAAA"], ["user", "渋谷A"], ["eventtype", "ロック"], ["eventmethod", "-"], ["pincode", 0], ["created_at", "2016-12-09 00:52:35.545295"], ["updated_at", "2016-12-09 00:52:35.545295"]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.6ms)[0m  INSERT INTO "events" ("eventtime", "device", "user", "eventtype", "eventmethod", "pincode", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["eventtime", "2016-12-09 09:00:00.000000"], ["device", "カギBBB"], ["user", "渋谷B"], ["eventtype", "ロック解除"], ["eventmethod", "PINコード"], ["pincode", 9876], ["created_at", "2016-12-09 00:52:35.576571"], ["updated_at", "2016-12-09 00:52:35.576571"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "events" ("eventtime", "device", "user", "eventtype", "eventmethod", "pincode", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["eventtime", "2016-12-08 09:00:00.000000"], ["device", "カギAAA"], ["user", "渋谷A"], ["eventtype", "ロック"], ["eventmethod", "-"], ["pincode", 0], ["created_at", "2016-12-09 00:52:58.562896"], ["updated_at", "2016-12-09 00:52:58.562896"]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "events" ("eventtime", "device", "user", "eventtype", "eventmethod", "pincode", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["eventtime", "2016-12-09 09:00:00.000000"], ["device", "カギBBB"], ["user", "渋谷B"], ["eventtype", "ロック解除"], ["eventmethod", "PINコード"], ["pincode", 9876], ["created_at", "2016-12-09 00:52:58.594118"], ["updated_at", "2016-12-09 00:52:58.594118"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2016-12-09 10:23:15 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-12-09 10:23:16 +0900
+
+
+Started GET "/toppage/index" for ::1 at 2016-12-09 10:23:16 +0900
+Processing by ToppageController#index as HTML
+  Rendered toppage/index.html.erb within layouts/application (8.0ms)
+  Rendered templete/_menu.html.erb (1.0ms)
+Completed 200 OK in 1133ms (Views: 1092.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/show" for ::1 at 2016-12-09 10:24:13 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/show.html.erb within layouts/application (15.6ms)
+  Rendered templete/_menu.html.erb (0.0ms)
+Completed 200 OK in 398ms (Views: 397.3ms | ActiveRecord: 0.0ms)
